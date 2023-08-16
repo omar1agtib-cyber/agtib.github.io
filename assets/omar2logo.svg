@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="225" height="55" viewBox="0 0 225 55">
+  <defs>
+    <clipPath id="clip-iPhone_14_Pro_Max_1">
+      <rect width="225" height="55"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_14_Pro_Max_1" data-name="iPhone 14 Pro Max – 1" clip-path="url(#clip-iPhone_14_Pro_Max_1)">
+    <rect width="225" height="55" fill="#fff"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="114" height="45" transform="translate(45 9)" fill="none"/>
+    <text id="_ERN" data-name="   ERN" transform="translate(49 7)" font-size="40" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="43" xml:space="preserve">   ERN</tspan></text>
+    <text id="M" transform="translate(45 7)" font-size="40" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="43">M</tspan></text>
+    <text id="o" transform="translate(0 -17)" fill="#3b62eb" font-size="70" font-family="ScriptMTBold, Script MT"><tspan x="0" y="67">O</tspan></text>
+    <text id="_" data-name="/&gt;" transform="translate(163 -8)" fill="#3b62eb" font-size="50" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="54">/&gt;</tspan></text>
+  </g>
+</svg>

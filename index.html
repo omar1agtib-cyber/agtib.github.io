@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9370f9cd54.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="portfolio.css" />
+    <title>responsive portfolio</title>
+  </head>
+  <body>
+    <nav >
+      <div class="nav__content">
+        <div class="logo"><a href=""><img src="assets/omar2logo.svg"></a></div>
+        <label for="check" class="checkbox">
+          <i class="material-icons">menu</i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul class="nav" onclick="remove()">
+          <li>
+            <a href="#"
+              ><i class="material-icons ok">home</i><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#skill"
+              ><i class="material-icons ok">code</i><span>Skills</span></a
+            >
+          </li>
+          <li>
+            <a href="#projects"
+              ><i class="material-icons ok">web</i><span>Projects</span></a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              ><i class="material-icons ok">mail</i><span>Contact</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="section__content1">
+        <div class="content">
+          <p class="subtitle">WELCOM TO MY PORTFOLIO!</p>
+          <h1 class="title">I'm <span>AGTIB</span> Web Developer</h1>
+          <p class="desc">
+            Welcome to my web developer portfolio! I'm AGTIB, a skilled and
+            creative web developer with a passion for creating
+            beautiful,responsive, and user-friendly websites. I've worked on a
+            variety of web projects, ranging from personal blogs to e-commerce
+            platforms
+          </p>
+          <div class="find">
+            <h3>CONTACT WITH ME</h3>
+            <ul class="list">
+              <li><i class="fa-brands fa-github"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="image">
+          <img src="assets/myimage.png" alt="portfolio" />
+        </div>
+      </div>
+      <!-- skills -->
+      <div id="skill">
+        <div class="skillTitle">SKILLS</div>
+        <div class="listSkill">
+          <div class="item">
+            <div class="name">HTML5</div>
+            <div class="evaluate" style="--var: 100%"></div>
+          </div>
+          <div class="item">
+            <div class="name">CSS3</div>
+            <div class="evaluate" style="--var: 80%"></div>
+          </div>
+          <div class="item">
+            <div class="name">JAVASCRIPT</div>
+            <div class="evaluate" style="--var: 75%"></div>
+          </div>
+          <div class="item">
+            <div class="name">JAVA</div>
+            <div class="evaluate" style="--var: 50%"></div>
+          </div>
+          <div class="item">
+            <div class="name">REACTJS</div>
+            <div class="evaluate" style="--var: 50%"></div>
+          </div>
+          <div class="item">
+            <div class="name">ANGULAR</div>
+            <div class="evaluate" style="--var: 40%"></div>
+          </div>
+          <div class="item">
+            <div class="name">NODEJS</div>
+            <div class="evaluate" style="--var: 30%"></div>
+          </div>
+          <div class="item">
+            <div class="name">MONGODB</div>
+            <div class="evaluate" style="--var: 70%"></div>
+          </div>
+        </div>
+      </div>
+      <!-- PROjects -->
+      <div id="projects">
+        <div class="projectTitle">PROJECTS</div>
+        <div class="listProject">
+          <div class="item">
+            <img  class="imagez"src="assets/project1.jpg" />
+            <div class="back"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, minus!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, minus!
+            </p></div>
+            <div class="name">Project title</div>
+            <div class="bottum">
+              <button class="btnP" onclick="showMore(this)">Show more</button>
+              <button class="btnM" style="display: none;" onclick="showLess(this)">Show less</button>
+            </div>
+          </div>
+
+          <div class="item">
+            <img  class="imagez" src="assets/project2.jpg" />
+            <div class="back"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, minus!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, minus!
+            </p></div>
+            <div class="name">Project title</div>
+            <div class="bottum">
+              <button class="btnP" onclick="showMore(this)">Show more</button>
+              <button class="btnM" style="display: none;" onclick="showLess(this)">Show less</button>
+            </div>
+          </div>
+
+          <div class="item">
+            <img class="imagez" src="assets/project3.jpg" />
+            <div class="back"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, minus!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, minus!
+            </p></div>
+            <div class="name">Project title</div>
+            <div class="bottum">
+              <button class="btnP" onclick="showMore(this)">Show more</button>
+              <button class="btnM" style="display: none;" onclick="showLess(this)">Show less</button>
+            </div>
+          </div>
+
+          <div class="item">
+            <img class="imagez" src="assets/project4.jpg" />
+            <div class="back"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, minus!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, minus!
+            </p></div>
+            <div class="name">Project title</div>
+            <div class="bottum">
+              <button class="btnP" onclick="showMore(this)">Show more</button>
+              <button class="btnM" style="display: none;" onclick="showLess(this)">Show less</button>
+            </div>
+          </div>
+
+          <div class="item">
+            <img  class="imagez" src="assets/project5.jpg" />
+            <div class="back"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, minus!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, minus!
+            </p></div>
+            <div class="name">Project title</div>
+            <div class="bottum">
+              <button class="btnP" onclick="showMore(this)">Show more</button>
+              <button class="btnM" style="display: none;" onclick="showLess(this)">Show less</button>
+            </div>
+          </div>
+
+          <div class="item">
+            <img class="imagez" src="assets/project4.jpg" />
+            <div class="back"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, minus!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, minus!
+            </p></div>
+            <div class="name">Project title</div>
+            <div class="bottum">
+              <button class="btnP" onclick="showMore(this)">Show more</button>
+              <button class="btnM" style="display: none;" onclick="showLess(this)">Show less</button></div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Contact -->
+      <div id="contact">
+        <div class="titleContact">CONTACT</div>
+        <div class="contactMe">
+          <div class="freeText">
+            <p>Are you ready to take the next step? I'm here to listen, let's create something amazing together. 
+              Whether you have a project in mind,want to discuss an idea,I'd love to hear from you. 
+              Reach out to me through the contact form.</p>
+          </div>
+          <div class="form">
+            <form action="">
+              <div class="fullname myInput">
+                <input type="text" placeholder="Entre your full name">
+              </div>
+              <div class="email myInput">
+                <input type="email" placeholder=" Entre your Email">
+              </div>
+              <div class="textarea myInput">
+                <textarea placeholder="Write your message here"></textarea>
+              </div>
+              <div class="contactButton"><button>Contact me</button></div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function showMore(button) {
+        let parentItem = button.closest('.item');
+        let imagez = parentItem.querySelector('.imagez');
+        let back = parentItem.querySelector('.back'); 
+        let plus = parentItem.querySelector('.btnP');
+        let moins = parentItem.querySelector('.btnM');
+        imagez.style.display = 'none';
+        back.style.display = 'block';
+        plus.style.display = 'none';
+        moins.style.display = 'block';
+      }
+      function showLess(button){
+      let parentItem = button.closest('.item');
+        let imagez = parentItem.querySelector('.imagez');
+        let back = parentItem.querySelector('.back'); 
+        let plus = parentItem.querySelector('.btnP');
+        let moins = parentItem.querySelector('.btnM');
+        imagez.style.display = 'block';
+        imagez.style.marginBottom = '10px';
+        back.style.display = 'none';
+        plus.style.display = 'block';
+        moins.style.display = 'none';
+      }
+
+      // document.addEventListener("DOMContentLoaded", function () {
+            let checkbox = document.getElementById('check');
+            let list = document.querySelector('.nav');
+
+            checkbox.addEventListener('click', function () {
+                if (checkbox.checked) {
+                    list.style.left = '0';
+                } else {
+                    list.style.left = '-100%';
+                }
+            });
+
+            list.addEventListener('click', function () {
+                list.style.left = '-100%';
+                checkbox.checked = false;
+            });
+        // });
+    </script>
+  </body>
+</html>

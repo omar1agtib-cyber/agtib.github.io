@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root{
+    --primary-color: #3b62eb; /* Bright blue for emphasis */
+    --primary-color-dark: #0056b3; /* A darker shade of blue */
+    --text-dark: #333333; /* Dark main text color */
+    --text-light: #707070; /* Lighter secondary text color */
+    --extra-light: #F5F5F5; /* Extra light background */
+    --extra-light-dark: #e6d7d7;
+    --max-width: 1200px;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 99;
+}
+.nav__content{
+    max-width: var(--max-width);
+    margin:auto;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a img{
+    width: 152px;
+}
+nav .checkbox{
+    display: none;
+}
+nav input{
+    display: none;
+}
+nav .checkbox i{
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+ul li a{
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+nav ul li a span {
+    display: inline;
+}
+nav ul li a .ok {
+    margin-right: 10px;
+}
+/* nav ul li a .ok {
+    display: none;
+}
+
+nav ul li:hover span {
+    display: none;
+} */
+
+nav ul li:hover i {
+    display: inline;
+}
+nav ul li a:hover{
+    border-radius: 2%;
+    background-color: #ffffff;
+    box-shadow: 3px 0px 5px var(--primary-color);
+}
+.section{
+    background-color: var(--extra-light);
+}
+.section__content1{
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: 0% 12%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    border-bottom: 1px solid #dce1e4;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.subtitle{
+    letter-spacing: 2px;
+    columns: var(--text-light);
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+.title{
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+.title span{
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.desc{
+    line-height: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+.image{
+    display: grid;
+    place-items: center;
+}
+.image img{
+    width: min(25rem, 90%);
+    border-radius:100% ;
+}
+.find h3{
+    margin-bottom: 15px;
+}
+.find .list{
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.find .list li{
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 9px 15px #c1c8cd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.find .list li i{
+    font-size: 26px;
+}
+.find .list li:hover{
+    color: #ffffff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+#skill, #projects, #contact{
+    margin: 0% 12%;
+}
+.skillTitle, .projectTitle, .titleContact{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: x-large;
+}
+.listSkill{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid #dce1e4;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+.listSkill .evaluate{
+    width: 100%;
+    height: 20px;
+    box-shadow: 5px 9px 15px #c1c8cd;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+.listSkill .evaluate::before{
+    position: absolute;
+    height: 100%;
+    width: var(--var);
+    content: '';
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+.listProject{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid #dce1e4;
+    padding-bottom: 50px;
+}
+
+  .listProject .item {
+    position: relative;
+    box-shadow: 5px 9px 15px #c1c8cd;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+    min-height: 250px;
+  }
+  .listProject .item .name {
+    font-weight: bold;
+    font-size: 17px;
+    position: absolute;
+    bottom: 2%;
+  }
+  .back{
+    display: none;
+  }
+  .back p{
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .listProject .item .bottum{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .listProject .item:hover{
+    transform: translatey(-20px);
+    transition: 1s;
+  }
+  .item .bottum button{
+    padding: 5px 10px;
+    background: none;
+    font-size: 16px;
+    font-weight: 100;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+  }
+.listProject .item img{
+    width: 100%;
+}
+
+.contactMe{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 50px;
+    margin-top: 50px;
+    justify-items: center;
+    align-items: center;
+}
+.freeText{
+    width: 80%;
+}
+.freeText p{
+    font-size: 20px;
+}
+.form{
+    width: 80%;
+}
+.form form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 5px;
+    outline:2px solid var(--primary-color);
+    border-radius: 3px;
+    border: none;
+}
+form textarea{
+    max-width: 100%;
+    min-height: 140px;
+}
+.myInput{
+    margin-bottom: 7px;
+}
+.contactButton button{
+width: 100%;
+border: none;
+background-color: var(--primary-color);
+font-size: 18px;
+color: #ffffff;
+padding: 10px 5px;
+border-radius: 3px;
+}
+.contactButton button:hover{
+    background-color: var(--primary-color-dark);
+    cursor: pointer;
+}
+@media screen and (max-width:1024px){
+    .listProject{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #skill, #projects{
+        margin: 0% 12%;
+    }
+     #contact,.section__content1,.nav__content{
+        margin: 0% 2%;
+    }
+}
+@media (max-width:816px){
+    nav .checkbox{
+        display: block;
+    }
+    .nav{
+        padding: 10px 0px;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: -100%;
+        background-color: var(--extra-light);
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 2rem;
+    }
+    nav #check:checked ~ ul{
+        left: 0;
+    }
+    .listProject .item {
+        text-align: start;
+    }
+    .listProject .item img {
+        width: 100%;
+    }
+
+    nav ul li a{
+        font-size: 1.25rem;
+    }
+    .section__content1{
+        padding: 10rem 1rem 5rem 1rem;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .image{
+        grid-area: 1/1/2/2;
+    }
+    .find{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .listSkill , .listProject, .contactMe{
+        grid-template-columns: 1fr;
+    }
+    .listProject, .listSkill{
+        margin-top: 25px;
+    }
+    .listProject .item:hover{
+        transform: translateX(-20px);
+        transition: 1s;
+      }
+    .contactMe{
+        margin: 20px 0;
+    }
+    .freeText{
+        margin-bottom: 25px;
+    }
+}
